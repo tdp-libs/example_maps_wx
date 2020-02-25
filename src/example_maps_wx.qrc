@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/example_maps_wx">
+        <file alias="bunny.ply">resources/bunny.ply</file>
+    </qresource>
+</RCC>
