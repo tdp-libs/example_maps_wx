@@ -29,7 +29,7 @@ void loadModels(tp_maps::Map* map)
   //files. Modify the functions to suit your needs.
 
   //Loads a model of a bunny from a resource file.
-  loadPLYFromResource(map, "/example_maps_fps/bunny.ply");
+  loadPLYFromResource(map, "/example_maps_wx/bunny.ply");
 
   //Load a point cloud from file.
   //loadPointCloudFromFile(map, "path/to/point_cloud.json", {1, 0, 0, 1}, 2.0f);
@@ -46,11 +46,11 @@ void loadPLYFromResource(tp_maps::Map* map, const std::string& resourceName)
 {
   //Get the model data from the resource file. These resources are built into the application
   //binary, see:
-  //example_maps_fps/src/example_maps_fps.qrc
+  //example_maps_wx/src/example_maps_wx.qrc
   //And the following line:
-  //TP_RC += src/example_maps_fps.qrc
+  //TP_RC += src/example_maps_wx.qrc
   //In:
-  //example_maps_fps/vars.pri
+  //example_maps_wx/vars.pri
   auto resource = tp_utils::resource(resourceName);
   tp_utils::ResourceStream resourceStream(resource);
 

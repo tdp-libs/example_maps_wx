@@ -1,7 +1,7 @@
-#ifndef example_maps_fps_LoadModels_h
-#define example_maps_fps_LoadModels_h
+#ifndef example_maps_wx_LoadModels_h
+#define example_maps_wx_LoadModels_h
 
-#include "example_maps_fps/Globals.h"
+#include "example_maps_wx/Globals.h"
 
 #include "glm/glm.hpp"
 
@@ -11,7 +11,7 @@ class Map;
 class ImageLayer;
 }
 
-namespace example_maps_fps
+namespace example_maps_wx
 {
 
 //##################################################################################################
