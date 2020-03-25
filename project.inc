@@ -1,5 +1,17 @@
 
-#Mac
+#== Fedora =========================================================================================
+# dnf install -y wxGTK-devel
+# wx-config --cflags --libs core,base,gl
+
+DEFINES += __WXGTK__
+INCLUDEPATHS += /usr/lib64/wx/include/gtk2-unicode-release-2.8
+INCLUDEPATHS += /usr/include/wx-2.8
+
+LIBS += -lwx_gtk2u_core-2.8
+LIBS += -lwx_baseu-2.8
+LIBS += -lwx_gtk2u_gl-2.8
+
+#== Mac ============================================================================================
 # INCLUDEPATHS += /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/
 # INCLUDEPATHS += /usr/local/Cellar/sdl2/2.0.8/include/
 # INCLUDEPATHS += /usr/local/Cellar/freeimage/3.18.0/include/
@@ -10,15 +22,15 @@
 # LIBRARYPATHS += /usr/local/Cellar/freeimage/3.18.0/lib/
 # LIBRARYPATHS += /usr/local/Cellar/boost/1.68.0/lib/
 
-#Windows MSVC 32
+#== Windows MSVC 32 ================================================================================
 
-# INCLUDEPATH  += C:\FreeImage\Dist\x32
+# INCLUDEPATHS += C:\FreeImage\Dist\x32
 # LIBRARYPATHS += C:\FreeImage\Dist\x32
 
-# INCLUDEPATH  += C:\SDL2\SDL2-2.0.10\i686-w64-mingw32\include
+# INCLUDEPATHS += C:\SDL2\SDL2-2.0.10\i686-w64-mingw32\include
 # LIBRARYPATHS += C:\SDL2\SDL2-2.0.10\i686-w64-mingw32\lib
 
-#Windows MSVC 64
+#== Windows MSVC 64 ================================================================================
 
 # INCLUDEPATH  += C:\FreeImage\Dist\x64
 # LIBRARYPATHS += C:\FreeImage\Dist\x64

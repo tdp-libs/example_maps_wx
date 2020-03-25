@@ -23,6 +23,11 @@ should have created a `maps_wx/project.inc` file, this can be modified to add pl
 include and library paths. If these modifications may be of use to someone else then they can be 
 added to the project.inc file found in `maps_wx/example_maps_wx/` directory.
 
+The following command will give the include and libs required on your system.
+```
+wx-config --cflags --libs core,base,gl
+```
+
 ## CMake Build Instructions
 From the maps_wx directory created in the steps above perform the following steps.
 ```
