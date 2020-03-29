@@ -1,4 +1,4 @@
-# Example tp_maps and SDL2 Application
+# Example tp_maps and wxWidgets Application
 This project demonstrates building a simple 3D view using tdp-libs and wxWidgets using CMake or 
 QMake. This project should build on Linux.
 
@@ -7,7 +7,8 @@ QMake. This project should build on Linux.
 * A toolchain for your chosen platform. [Installation instructions](https://github.com/tdp-libs/tdp_build)
 
 ## Clone Instructions
-These steps will clone the repo and all of its dependencies. You will need tdp_tools in your path for this to work.
+These steps will clone the repo and all of its dependencies. You will need tdp_tools in your path 
+for this to work.
 ```
 mkdir maps_wx
 cd maps_wx
