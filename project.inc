@@ -1,15 +1,16 @@
 
 #== Fedora =========================================================================================
-# dnf install -y wxGTK-devel
-# wx-config --cflags --libs core,base,gl
+# dnf install -y wxGTK3-devel
+# wx-config-3.0 --cflags --libs core,base,gl
 
 # DEFINES += __WXGTK__
-# INCLUDEPATHS += /usr/lib64/wx/include/gtk2-unicode-release-2.8
-# INCLUDEPATHS += /usr/include/wx-2.8
+# DEFINES += WXUSINGDLL
+# INCLUDEPATHS += /usr/lib64/wx/include/gtk3-unicode-3.0
+# INCLUDEPATHS += /usr/include/wx-3.0
 
-# LIBS += -lwx_gtk2u_core-2.8
-# LIBS += -lwx_baseu-2.8
-# LIBS += -lwx_gtk2u_gl-2.8
+# LIBS += -lwx_gtk3u_core-3.0
+# LIBS += -lwx_baseu-3.0
+# LIBS += -lwx_gtk3u_gl-3.0
 
 #== Mac ============================================================================================
 # brew install wxmac
@@ -31,11 +32,11 @@
 # INCLUDEPATHS += /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/
 # LIBRARYPATHS += /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/
 
-INCLUDEPATHS += /usr/local/Cellar/freeimage/3.18.0/include/
-LIBRARYPATHS += /usr/local/Cellar/freeimage/3.18.0/lib/
+# INCLUDEPATHS += /usr/local/Cellar/freeimage/3.18.0/include/
+# LIBRARYPATHS += /usr/local/Cellar/freeimage/3.18.0/lib/
 
-INCLUDEPATHS += /usr/local/Cellar/boost/1.68.0_1/include/
-LIBRARYPATHS += /usr/local/Cellar/boost/1.68.0_1/lib/
+# INCLUDEPATHS += /usr/local/Cellar/boost/1.68.0_1/include/
+# LIBRARYPATHS += /usr/local/Cellar/boost/1.68.0_1/lib/
 
 #== Windows MSVC 32 ================================================================================
 
