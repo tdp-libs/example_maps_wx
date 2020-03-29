@@ -47,7 +47,8 @@ bool MyApp::OnInit()
   if(tp_wx_maps::OpenGLConfig::showModal(config, nullptr, wxID_ANY, "OpenGL Config") != wxID_OK)
     return false;
 
-  MyFrame *frame = new MyFrame("Hello World", wxPoint(50, 50), wxSize(450, 340), config);
+  MyFrame *frame = new MyFrame("Example tp_maps in wxWidgets", wxPoint(50, 50), wxSize(450, 340), config);
+  frame->Center();
   frame->Show(true);
 
   return true;
